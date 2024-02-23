@@ -62,6 +62,7 @@ function ThankYouPage() {
     console.log(userEmail);
     emailUser(userEmail)
     // alert(userEmail);
+    // new one
     }, 1000);
   }, []);
   return (
