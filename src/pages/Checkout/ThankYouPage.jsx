@@ -59,9 +59,9 @@ function ThankYouPage() {
   useEffect(() => {
     setTimeout(() => {
       var userEmail = localStorage.getItem('email');
-    // console.log(userEmail);
-    // emailUser(userEmail)
-    alert(userEmail);
+    console.log(userEmail);
+    emailUser(userEmail)
+    // alert(userEmail);
     }, 1000);
   }, []);
   return (
