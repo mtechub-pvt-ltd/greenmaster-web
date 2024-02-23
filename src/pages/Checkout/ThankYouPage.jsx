@@ -112,10 +112,11 @@ function ThankYouPage() {
             backgroundColor: "darkgreen",
             color: "white",
             borderRadius: "5px",
-            
+            cursor: "pointer"
           }}
-            href="#" onClick={handleViewEmailCredentials} >
-              Go to Email
+            onClick={() => navigate("/")}
+            >
+              Go to Home
             </a></span>
             {/* <div class="button-container"> */}
               {/* <button class="button"  onClick={handleViewEmailCredentials}>View Email for Credentials</button> */}
