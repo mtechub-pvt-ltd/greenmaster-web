@@ -71,7 +71,8 @@ function GetStartedButton() {
                     else {
                         setError(false)
                         localStorage.setItem('email', email);
-                        window.location.href = `https://buy.stripe.com/test_3cscP17M65YU1UcfZi?prefilled_email=${email}`
+                        // window.location.href = `https://buy.stripe.com/test_3cscP17M65YU1UcfZi?prefilled_email=${email}`
+                        window.location.href = `https://buy.stripe.com/14kbMv2eHel095C5kk?prefilled_email=${email}`
                     }
                 }}
             >
