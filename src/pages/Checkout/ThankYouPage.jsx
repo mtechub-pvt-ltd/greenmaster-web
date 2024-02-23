@@ -28,32 +28,32 @@ function ThankYouPage() {
           // payment_details: result.paymentIntent,
         };
        
-        // try {
-        //   const result = await axios.post(
-        //     `${BASEURL}/users/createUserAccount`,
-        //     body
-        //   );
-        //   console.log(result);
-        //   if (result.status === 200) {
-        //     console.log("User created ");
-        //     console.log(result.data.user);
-        //     localStorage.setItem(
-        //       "green_auth_tkn",
-        //       JSON.stringify(result.data.user)
-        //     );
-        //     // setIsModalOpen(true);
-        //     // navigate("/thank-you")
-        //     // setloading(false);
-        //     // navigate("/")
-        //   }else{
+        try {
+          const result = await axios.post(
+            `${BASEURL}/users/createUserAccount`,
+            body
+          );
+          console.log(result);
+          if (result.status === 200) {
+            console.log("User created ");
+            console.log(result.data.user);
+            localStorage.setItem(
+              "green_auth_tkn",
+              JSON.stringify(result.data.user)
+            );
+            setIsModalOpen(true);
+            navigate("/thank-you")
+            setloading(false);
+            navigate("/")
+          }else{
 
-        //   }
-        // } catch (error) {
-        //   // setloading(false);
-        //   // toast.error("Server error.Please try again..")
-        //   // toast.error(error.response.data.message);
-        //   console.log(error);
-        // }
+          }
+        } catch (error) {
+          // setloading(false);
+          // toast.error("Server error.Please try again..")
+          // toast.error(error.response.data.message);
+          console.log(error);
+        }
       }
       
   useEffect(() => {
