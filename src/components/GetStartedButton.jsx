@@ -58,6 +58,22 @@ function GetStartedButton() {
             </div>
             <div
                 className="sc-dBAPYN iTtzpD"
+                onClick={() => {
+                    if (email === "" || email === null || email === undefined) {
+                        setErrorMessage("Please Fill Email to continue!")
+                        setError(true)
+                    } 
+                    // check if email is valid
+                    else if (!email.includes('@')) {
+                        setErrorMessage("Please enter a valid email address!")
+                        setError(true)
+                    }
+                    else {
+                        setError(false)
+                        localStorage.setItem('email', email);
+                        window.location.href = `https://buy.stripe.com/test_3cscP17M65YU1UcfZi?prefilled_email=${email}`
+                    }
+                }}
             >
                 <span
                     // id="button-772cd149"
@@ -66,22 +82,7 @@ function GetStartedButton() {
                 >
                     <div
                         //  className="sc-jWBwVP gvUqdv"
-                        onClick={() => {
-                            if (email === "" || email === null || email === undefined) {
-                                setErrorMessage("Please Fill Email to continue!")
-                                setError(true)
-                            } 
-                            // check if email is valid
-                            else if (!email.includes('@')) {
-                                setErrorMessage("Please enter a valid email address!")
-                                setError(true)
-                            }
-                            else {
-                                setError(false)
-                                localStorage.setItem('email', email);
-                                window.location.href = `https://buy.stripe.com/test_3cscP17M65YU1UcfZi?prefilled_email=${email}`
-                            }
-                        }}>
+                       >
                         <span
 
                             //  to={"/checkout-b"}

@@ -7,7 +7,31 @@ import { useNavigate,} from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { BASEURL } from '../../../utils/BASEURL'
+import img from './images.png'
 function ThankYouPage() {
+  const checkmarkContainerStyle = {
+    display: 'inline-block',
+    width: '22px',
+    height: '22px',
+    background: '#fff',
+    position: 'relative',
+    border: '1px solid #000',
+    borderRadius: '4px', // Makes the check box rounded
+  };
+
+  // Inline styles for the checkmark itself
+  const checkmarkStyle = {
+    content: '""', // Note: `content` does not work with inline styles, used here for completeness
+    position: 'absolute',
+    left: '6px',
+    top: '12px',
+    width: '6px',
+    height: '12px',
+    borderTop: 'solid #000',
+    borderRight: 'solid #000',
+    borderWidth: '0 2px 2px 0',
+    transform: 'rotate(45deg)',
+  };
   const [userData] = useState(JSON.parse(localStorage.getItem("green_auth_tkn")))
   const navigate = useNavigate()
   const handleViewEmailCredentials = () => {
@@ -69,20 +93,38 @@ function ThankYouPage() {
     <>
 
       <div style={{ height: "100vh" }}>
-        <Navbar />
+        {/* <Navbar /> */}
         <div class="body">
           <div className='container'>
+          <div 
+          style={{
+            padding: '20px',
+          }}
+          >
+      <img src={img} alt="Thank you" style={{width: '10%', height: 'auto'}} />
+    </div>
             <h1>Thanks for enrolling in this course!</h1>
-            <p className='details'>The email credentials have been sent to the email address. <span> <a href="#" style={{ textDecoration: "underline" }} onClick={handleViewEmailCredentials} >
-              Go to email
-            </a></span></p>
-            <div class="button-container">
+            <p className='details'>The Login credentials have been sent to the email address. </p>
+            <br></br>
+            <span> <a
+            style={{ textDecoration: "none",
+            padding: "15px",
+            backgroundColor: "darkgreen",
+            color: "white",
+            borderRadius: "5px",
+            
+          }}
+            href="#" onClick={handleViewEmailCredentials} >
+              Go to Email
+            </a></span>
+            {/* <div class="button-container"> */}
               {/* <button class="button"  onClick={handleViewEmailCredentials}>View Email for Credentials</button> */}
-              <button class="button" onClick={() => navigate("/user_portal")}>View Videos</button>
-            </div>
+              {/* <button class="button" onClick={() => navigate("/user_portal")}>View Videos</button> */}
+            {/* </div> */}
           </div>
         </div>
-      </div>
+        </div>
+     
     </>
   )
 }
