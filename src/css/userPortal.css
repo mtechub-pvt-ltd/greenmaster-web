@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .MuiBox-root {
+    width: 100% !important;
+    }
+  
+  }
+  .videoCard {
+    cursor: pointer;
+    /* Set initial border style (no border) */
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out; /* Add transition for smooth effect */
+  
+    /* Other styles for your video card */
+  }
+  
+  .videoCard:hover {
+    /* Set border style when hovered */
+    border: 2px solid rgb(29, 191, 115);
+  }
+  
+  /* @media screen and (width: 768px) and (height: 1024px) {
+    .videoCard{
+        width: 45%;
+    }
+  } */

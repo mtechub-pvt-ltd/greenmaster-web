@@ -1,0 +1,65 @@
+
+.body{
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: auto;
+}
+
+.container {
+    width: 70vw;
+    text-align: center;
+}
+h1 {
+    color: #333;
+    font-weight: 700;
+}
+
+.details {
+    font-family: Inter;
+    line-height: 27px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* width: 100%; */
+    margin-top: 30px;
+}
+
+.button {
+    background-color: rgb(29, 191, 115);
+    color: rgb(255, 255, 255);
+    padding: 15px 90px;
+    font-size: 17px;
+    border-radius: 3px;
+    border: none;
+    width: 60%;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #31e490;
+}
+@media (max-width: 767px) {
+    .button {
+        padding: 15px 50px;
+        font-size: 13px;
+        width: 100%;/* Adjust font size for small devices */
+    }
+}
+
+/* Media query for iPad devices (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .button {
+        width: 70%;
+    }
+}

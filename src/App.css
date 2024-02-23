@@ -1,0 +1,51 @@
+#root {
+ padding: 0;
+ margin: 0;
+ font-family: Inter;
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/oswald/700.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/oswald/regular.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/700.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://d3syewzhvzylbl.cloudfront.net/fonts/google-fonts/inter/regular.woff2)
+      format("woff2");
+  }
+/* <style
+data-styled="fCLIix ezkFdb jfmWsp ewndZE hLyXbM eXggVH XsYtG iTtzpD jbsGVC hNsDyw brzuu eWBNOr cmJtch flMtlV kbeTIM kjjJtr lnPgWl gMFqAH ijnGEG ialpYJ byOtrE eloQGw bLCtdV UFHGP khjhfZ bPGAsa gtRWGz jPTObp gfMeJe hIvaGJ bkRRRL cPhdLi GseGE cAZwHy dnxEul cbfzzv dkXQnb kFtwjv jXIzyN cVQMlQ ksYLLM jjcvKO imRjHW gJzrhq fpJajO eKvLzy jIBfxX jsBgvk ixeMQN dFSmyj cNuJIH gEbhjs jKHLLi cTKYsc TEFGm fxUrOW bEbKta eBFyOD ifMKoD jkEpYS gUZhxE gugXev iyFAYq bTzZRb eMPyBX kUMzrU dmIjTz eRMfaQ eLAnUr dcuifZ foTqr IMzHD hQaljP kXYefL vVorD gyBVcc oxcXf gxIDcm dzwxkT dxwizD Vechi hZUgPO jSbxXI iBTVPs kpdMPR gwPPPj jlxren jiaCOe cxNCYy fxoWiE cgnJGL dGMSkE cfarOH flxEHN iDyCdl dpWEMj kuUxlU bpiZZU jawMFj nKEHD frVYAF kCktHv dJXCCn dppWQq gsGbux dLOICr feucMO cSphii jzIYEH jEZAtz gTYDrb cZCBYj fEPozp kEImYM bDAnIK hraRLb iRnhFC iRvviT yayT iDfwqm iYokkG eQEqVT hoyOou ldOCQn bgUpdX RwBDo fwHAWX hTboZa bXRMhP eSKzZa ilSgMs iYqthx bcXCqG ehKZcH gYoZKO cjfhDR fFCGFi jKPBFW hWjfHp grDBnB iQIkGl hKugqf hjbFke kwthqo bybZrN eLlZsx hNWmwv qejUQ hFDIii byxgdE bAJcVv gZdYgC geajec iOuAgF bWClLj eqswyv iEjOyd fIBSzs jXnZdo cQCcGA hBdjxn cCTzKR hHDKcn gxlOHM iCSAzr iUKAVK eKibKv dZcuAz iUWOBH hCpmmq dIXFYw hftGML khfVEF Wkfla iZeMsl hXvLBU cyftCs giifWr gdsPpA dWtJyn FRXuq lloCBD cSGKIq gseiAR dEqBMA fusvRU dLRpyb iCWcHw bJhuQz eVBaEy bQmRUv cvHyRl lnWFNo hUvyNc jkxFpD dFehkC hwoaeN kwxwnI hURcsR kjGPp DxfeO enirwM bcDFYt bKBhTC kkJkYQ iJqRGz eStzEb dyIWsp eXnyeP iKudco jcMOnS bDdiTC bOrOIz gwCWNM dikFtv cxZKRh gFaggf elPcsW clxcCb kMPCfH ezyhRN lajGjg kBJgsi iLfjFD iZKOPx bHyqRB dXAMN kxujnq jLsZJI iRQWgn HSgVi bMlWmL eVfghP eUeTxG dpakyD besTbv sddRf lazfyK jUYsvU cnEXFh bhFVJF gZBwNh bACvNa hNOzBG fPXwal hEvTiF zDESH dqcReR iFxOnB iEZgQz kqwkGO jaLEgs ixVTWd cHviIC kuKBij gqUtXA jodMeo JgJZN irwRHU fUjJXh kUoOsQ kUlmrJ hdCQPh fgUnlS iqlUUc gvUqdv uHoeL cMtIbr bNCdze gZEmwL gnVZeO dsvtBR jzlXJA jEdTVT ebwCjY LZIGF lbKkkQ cpLXsY kxRkdS grGVKm jVfFCS fDKUlR"
+data-styled-version="4.4.0"
+> */
+
+.strong_class{
+  font-family: Inter;
+}
+.error {
+  font-family: Inter;
+  color: red !important;
+  align-self: center !important;
+  font-size: 13px !important;
+  margin-top: 5px  !important;
+}
